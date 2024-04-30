@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #141519;
+}
+.box{
+    margin:200px auto;
+    background-color: #1F2630;
+    width: 300px;
+    height: 350px;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box img{
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    border: 10px solid #cccccc22;
+    border-radius: 50%;
+}
+.box h1{
+    color:white;
+}
+.box p{
+    color: #7A808C;
+}
+span{
+    position: relative;
+    margin-left: 10px;
+    font-size: 18px;
+    z-index: 1;
+    cursor: pointer;
+}
+p{
+    margin-bottom: 10px;
+}
+h1 , p ,span, button{
+    padding: 10px;
+    padding-left:20px;
+}
+button{
+    margin: 10px;
+    margin-left: 15px;
+    width: 90%;
+    border-radius: 15px;
+    color: #FD7611;
+    font-weight: bold;
+    outline: none;
+    border:none;
+    text-align: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+span::after{
+    content:"";
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #7C8897;
+    position: absolute;
+    left: 4px;
+    bottom: 0px;
+    color:white;
+    z-index: -1;
+    cursor: pointer;
+}
+span:hover::after{
+    background-color:#FD7611;
+    border-radius: 50%;
+    color:white;
+    cursor: pointer;
+}
+p{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.428;
+}
+span.selected::after{
+    background-color: white;
+    color: black!important;
+    border-radius: 50%;
+    z-index: -1;
+}
+.thank{
+    margin: auto!important;
+    position: relative!important;
+    margin-bottom: 30px!important;
+    left: 0!important;
+}
+h5{
+    color:#FD7611;
+    position: relative;
+}
+h5::after{
+    content: " ";
+    background-color:#ffffff1b;
+    width: 157px;
+    height: 25px;
+    left: -15px;
+    top: -5px;
+    position: absolute;
+    border-radius:15px ;
+}
+.attribution{
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+.attribution a{
+    color: white;
+}
